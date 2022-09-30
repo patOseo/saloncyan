@@ -1,0 +1,16 @@
+// Members
+
+.team-members {
+	.team-member {
+		position: relative;
+
+		.member-info {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			padding: 2rem 0;
+			background: rgba(0,0,0,.5);
+		}
+	}
+}

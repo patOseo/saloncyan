@@ -1,0 +1,156 @@
+// Home
+
+.home-header {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	background-image: url('/wp-content/themes/saloncyan/images/home-header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+
+	@include media-breakpoint-down(md) {
+		background-image: url('/wp-content/themes/saloncyan/images/home-header-small.jpg');
+		background-position: center center;
+		min-height: 100vh;
+	}
+
+	.home-headline {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 100%;
+		text-align: center;
+		font-family: $headings-font-family;
+		font-size: 4rem;
+		font-style: italic;
+		color: $grey;
+		text-align: center;
+		opacity: .7;
+
+		img {
+			display: none;
+		}
+
+		@include media-breakpoint-down(md) {
+			transform: initial;
+			top: initial;
+			bottom: 2rem;
+			left: 0;
+			font-size: 1.25rem;
+			span {
+				&:nth-child(3) {
+					position: relative;
+					top: -3px;
+					font-size: .85rem;
+				}
+	
+				&:nth-child(4) {
+					position: relative;
+					top: 0;
+				}
+			}
+
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 180px;
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			span {
+				&:nth-child(3) {
+					font-size: 2.5rem;
+				}
+	
+				&:nth-child(4) {
+					position: relative;
+					top: 1rem;
+				}
+			}
+		}
+
+	}
+}
+
+.home {
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				color: $grey;
+
+				&:after {
+					color: $grey !important;
+				}
+			}
+		}
+
+		li#menu-item-28 {
+			@include media-breakpoint-up(md) {
+				background-image: url('/wp-content/themes/saloncyan/images/saloncyan.png');
+			}
+		}
+	}
+
+	h1 {
+		margin: 2rem auto;
+		width: 100%;
+		text-transform: lowercase;
+		line-height: 0.85;
+
+		.break {
+			float: right;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.entry-header {
+		@include media-breakpoint-up(md) {
+			margin: 4rem 10rem 10rem 10rem;
+		}
+	}
+
+	.entry-content {
+		clear: both;
+	}
+}
+
+.home-blocks {
+	padding: 0 10px;
+
+	.home-block {
+		position: relative;
+		margin-bottom: 2rem;
+		min-height: 295px;
+		text-align: center;
+		font-family: $headings-font-family;
+		font-style: italic;
+		transition: .2s;
+
+		a {
+			color: $body-color;
+		}
+
+		&:hover {
+			opacity: 80%;
+
+			a {
+				color: $body-color;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+
+		span {
+			width: 100%;
+			position: absolute;
+			top: 5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

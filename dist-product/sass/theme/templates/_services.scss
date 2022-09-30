@@ -1,0 +1,56 @@
+.page-template-services {
+	.entry-content {
+		margin: 0 0 4rem 0;
+	
+		h3 {
+			text-transform: lowercase;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: .925rem;
+		}
+	}
+
+	.service-blocks {
+		.service-block {
+			margin-bottom: 2rem;
+			padding: 2rem 1.5rem;
+			border-radius: 2px;
+			background: $lightblue;
+
+			.service-block-title {
+				margin-bottom: 1.5rem;
+				font-family: $font-family-sans-serif;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.25rem;
+				color: $white;
+			}
+
+			.service-title, .service-price {
+				margin-bottom: 0;
+				font-size: .85rem;
+			}
+
+			.btn-book {
+				margin-top: 1rem;
+				padding: .75rem 1.5rem;
+				border: 0;
+				border-radius: 2px;
+				background: $primary;
+				text-transform: uppercase;
+				font-weight: bold;
+				transition: 0.2s;
+
+				&:hover {
+					background: darken($primary, 10%);
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-top: 4rem;
+				}
+			}
+		}
+	}
+}

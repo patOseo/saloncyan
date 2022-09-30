@@ -1,0 +1,28 @@
+.header-image-logo {
+	position: absolute;
+	top: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 80px;
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}
+
+.header-image {
+	position: relative;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	z-index: -1;
+
+	img {
+		width: 100%;
+	}
+
+	@include media-breakpoint-up(md) {
+		position: relative;
+		margin-top: -9.5rem;
+	}
+}

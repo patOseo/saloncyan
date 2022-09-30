@@ -1,0 +1,32 @@
+.site {
+	@include media-breakpoint-up(sm) {
+		padding-top: 1rem;
+	}
+}
+
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-size: $font-size-lg;
+	line-height: 1.75;
+
+	.entry-header, .entry-content {
+		clear: both;
+		@include media-breakpoint-up(md) {
+			margin: 0 10rem 4rem 10rem; 
+		}
+	}
+
+	h1 {
+		text-transform: lowercase;
+		font-style: italic;
+	}
+
+	h2 {
+		text-transform: lowercase;
+	}
+
+	p {
+		margin-bottom: 2rem;
+	}
+}

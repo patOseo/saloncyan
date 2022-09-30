@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Orator Std';
+    src: url('/wp-content/themes/saloncyan/fonts/OratorStd.woff2') format('woff2'),
+        url('/wp-content/themes/saloncyan/fonts/OratorStd.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orator Std';
+    src: url('/wp-content/themes/saloncyan/fonts/OratorStd-Slanted.woff2') format('woff2'),
+        url('/wp-content/themes/saloncyan/fonts/OratorStd-Slanted.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/wp-content/themes/saloncyan/fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('/wp-content/themes/saloncyan/fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('/wp-content/themes/saloncyan/fonts/AvenirNextLTPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/wp-content/themes/saloncyan/fonts/AvenirNext-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/saloncyan/fonts/AvenirNext-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

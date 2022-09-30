@@ -1,0 +1,37 @@
+// Heading
+
+.heading {
+	margin: 2rem auto;
+	width: 100%;
+	max-width: 100%;
+	text-transform: lowercase;
+	line-height: 0.85;
+	span {
+		&.large {
+			font-size: 4rem;
+			@include media-breakpoint-up(md) {
+				font-size: 8rem;
+			}
+		}
+		&.medium {
+			font-size: 3rem;
+			@include media-breakpoint-up(md) {
+				font-size: 6rem;
+			}
+		}
+		&.small {
+			font-size: 3rem;
+			font-style: normal;
+			@include media-breakpoint-up(md) {
+				font-size: 1.5rem;
+			}
+		}
+		&.italic {
+			font-style: italic;
+		}
+	}
+
+	.break {
+		margin-bottom: 2rem;
+	}
+}
