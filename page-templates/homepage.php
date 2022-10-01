@@ -12,6 +12,8 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
+$img_desktop = get_field('header_img_desktop');
+$img_mobile = get_field('header_img_mobile');
 
 if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
@@ -24,6 +26,15 @@ if ( is_front_page() ) {
 	</div>
 </div>
  -->
+<style>
+	.home-header {
+	background-image: url(<?= $img_desktop; ?>);
+
+	@media and (max-width: 991.98px) {
+		background-image: url(<?= $img_mobile; ?>);
+	}
+}
+</style>
 
 <div class="wrapper" id="full-width-page-wrapper">
 
