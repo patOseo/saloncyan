@@ -28,10 +28,12 @@ if ( is_front_page() ) {
  -->
 <style>
 	.home-header {
-	background-image: url(<?= $img_desktop; ?>);
-
-	@media and (max-width: 991.98px) {
-		background-image: url(<?= $img_mobile; ?>);
+		background-image: url(<?= $img_desktop; ?>);
+	}
+	@media screen and (max-width: 991.98px) {
+		.home-header {
+			background-image: url(<?= $img_mobile; ?>);
+		}
 	}
 }
 </style>
