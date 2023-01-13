@@ -11210,7 +11210,7 @@ li#menu-item-28 {
     li#menu-item-28 {
       display: block;
       margin-top: -38px;
-      background-image: url("/wp-content/themes/saloncyan/images/saloncyan-dark.png");
+      background-image: url("/wp-content/themes/saloncyan/images/saloncyan-logo.png");
       background-repeat: no-repeat;
       background-size: contain;
       text-indent: -9000px;
@@ -11315,6 +11315,16 @@ footer.site-footer {
         position: relative;
         top: 1rem; } }
 
+.slogan {
+  display: block !important;
+  margin: 0 auto;
+  max-width: 290px !important;
+  -webkit-filter: drop-shadow(1px 1px 0px #999);
+  filter: drop-shadow(1px 1px 0px #999); }
+  @media (min-width: 992px) {
+    .slogan {
+      max-width: 100% !important; } }
+
 .home .navbar-nav .nav-item .nav-link {
   color: #cecece; }
   .home .navbar-nav .nav-item .nav-link:after {
@@ -11322,7 +11332,7 @@ footer.site-footer {
 
 @media (min-width: 768px) {
   .home .navbar-nav li#menu-item-28 {
-    background-image: url("/wp-content/themes/saloncyan/images/saloncyan.png"); } }
+    background-image: url("/wp-content/themes/saloncyan/images/saloncyan-logo.png"); } }
 
 .home h1 {
   margin: 2rem auto;

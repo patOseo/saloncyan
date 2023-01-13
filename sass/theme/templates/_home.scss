@@ -75,6 +75,18 @@
 	}
 }
 
+.slogan {
+	display: block !important;
+	margin: 0 auto;
+	max-width: 290px !important;
+	-webkit-filter: drop-shadow(1px 1px 0px #999);
+	filter: drop-shadow(1px 1px 0px #999);
+
+	@include media-breakpoint-up(lg) {
+		max-width: 100% !important;
+	}
+}
+
 .home {
 	.navbar-nav {
 		.nav-item {
@@ -89,7 +101,7 @@
 
 		li#menu-item-28 {
 			@include media-breakpoint-up(md) {
-				background-image: url('/wp-content/themes/saloncyan/images/saloncyan.png');
+				background-image: url('/wp-content/themes/saloncyan/images/saloncyan-logo.png');
 			}
 		}
 	}

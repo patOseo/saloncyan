@@ -100,8 +100,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					?>
 				<?php if(is_front_page()): ?>
 					<div class="home-headline" uk-scrollspy="target: span; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 100;">
-						<img src="/wp-content/themes/saloncyan/images/saloncyan.png" alt="Salon Cyan">
-						<span>confidence</span> <span>is</span> <span>beautiful</span>
+						<img src="/wp-content/themes/saloncyan/images/saloncyan-logo.png" alt="Salon Cyan">
+						<img class="slogan my-3" src="/wp-content/themes/saloncyan/images/slogan.png" alt="Confidence is Beautiful">
 					</div>
 				</div>
 				<?php endif; ?>
