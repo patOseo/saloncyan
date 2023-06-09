@@ -2,7 +2,7 @@
 $headerimg = get_field('header_image'); 
 ?>
 
-<a href="/"><img class="header-image-logo" src="/wp-content/themes/saloncyan/images/saloncyan-dark.png" alt="Salon Cyan"></a>
+<div class="d-block mobile-header-logo py-4 py-lg-0"><a href="/"><img class="header-image-logo" src="/wp-content/themes/saloncyan/images/saloncyan-logo.png" alt="Salon Cyan"></a></div>
 
 <?php if($headerimg): ?>
 	<div class="header-image uk-animation-slide-bottom-medium">

@@ -17,15 +17,19 @@ $insta = get_field('instagram');
 	<div class="entry-content" uk-scrollspy="target: .single-member-image, p, .fa, .wp-block-column > *, figure; cls: uk-animation-slide-bottom-medium; repeat: false; delay: 200;">
 
 		<div class="single-member">
-			<h1><?php the_title(); ?></h1>
-			<p class="member-position"><strong><?php the_field('position'); ?></strong></p>
-			<div class="row">
-				<div class="col-lg-6 col-md-12">
+			<div class="row align-items-center mb-4">
+				<div class="col-md-6">
 					<div class="single-member-image"><?php echo wp_get_attachment_image($image, 'team-member'); ?></div>
-					<?php if ($insta): ?><a href="<?php echo $insta; ?>" target="_blank" rel="noopener,noreferrer"><i class="fa fa-instagram"></i></a><?php endif; ?>
 				</div>
-				<div class="col-lg-6 col-md-12">
-					<p><?php the_field('short_bio'); ?></p>
+				<div class="col-md-6">
+					<h1><?php the_title(); ?></h1>
+					<p class="mb-0 pl-2 member-position"><strong><?php the_field('position'); ?></strong></p>
+					<?php if ($insta): ?><div class="mt-3"><a href="<?php echo $insta; ?>" target="_blank" rel="noopener,noreferrer"><i class="fa fa-instagram"></i></a></div><?php endif; ?>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
